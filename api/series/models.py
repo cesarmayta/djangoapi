@@ -19,6 +19,7 @@ class Serie(models.Model):
     release_date = models.DateField()
     rating = models.IntegerField(default=0)
     category = models.CharField(max_length=10, choices=CATEGORIES_CHOICES)
+    image = models.ImageField(upload_to='series/images',default='serie.png')
     
     def __str__(self):
         return self.name

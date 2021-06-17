@@ -4,5 +4,5 @@ from .models import Serie
 class SerieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Serie
-        fields = ('id', 'name', 'release_date', 'rating', 'category')
+        fields = ('id', 'name', 'release_date', 'rating', 'category','image')
 
